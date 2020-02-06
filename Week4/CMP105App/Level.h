@@ -3,6 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "Cursor.h"
 #include <string.h>
 #include <iostream>
 
@@ -29,4 +32,17 @@ private:
 	GameObject testSprite;
 	sf::Texture texture;
 
+	Player player;
+	sf::Texture playerSprite;
+
+	Enemy enemy1;
+	Enemy enemy2;
+	sf::Texture enemySprite;
+	sf::Texture altEnemySprite;
+
+	Cursor cursor;
+	sf::Texture cursorSprite;
+
+	int side;
+	int bottom;
 };
